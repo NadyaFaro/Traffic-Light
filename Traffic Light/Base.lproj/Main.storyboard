@@ -40,9 +40,12 @@
                                 <state key="normal" title="START">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="pressStartButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="qMJ-Sr-ClY"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="dQn-6b-3Fm" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1Zj-Qu-Jp0"/>
                             <constraint firstItem="Dmc-42-OKF" firstAttribute="top" secondItem="XGC-8k-9Nk" secondAttribute="bottom" constant="25" id="K8h-Km-LOg"/>
@@ -61,6 +64,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="greenLight" destination="Dmc-42-OKF" id="wL8-sT-8rT"/>
+                        <outlet property="redLight" destination="dQn-6b-3Fm" id="bTx-Sd-80p"/>
+                        <outlet property="startButton" destination="evK-4a-ev4" id="8ok-tP-sjk"/>
+                        <outlet property="yellowLight" destination="XGC-8k-9Nk" id="fcw-Sd-9cJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
